@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Heftelik Xerc Analizi</h2>
+      <div id="expense-input">
+        <div class="form-group">
+          <label for="day">Gun nomresi (1-7):</label>
+          <input type="number" id="day" class="form-control" min="1" max="7" />
+        </div>
+        <div class="form-group">
+          <label for="expense-type">Xerc novu:</label>
+          <select id="expense-type" class="form-control">
+            <option value="qida">Qida</option>
+            <option value="neqliyyat">Neqliyyat</option>
+            <option value="tehsil">Tehsil</option>
+            <option value="kommunikasiya">Kommunikasiya</option>
+            <option value="geyim">Geyim</option>
+            <option value="diger">Diger</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="amount">Mebleğ:</label>
+          <input type="number" id="amount" class="form-control" />
+        </div>
+        <button class="btn btn-primary">Xerci elave et</button>
+        <button class="btn btn-success">Hesabla</button>
+      </div>
+      <div id="results" class="mt-4"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

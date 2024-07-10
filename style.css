@@ -1,0 +1,12 @@
+.container {
+  margin-top: 50px;
+}
+.card {
+  width: 22rem;
+}
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 10px;
+}
